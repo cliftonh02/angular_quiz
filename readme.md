@@ -14,6 +14,8 @@ Instantiate a new Angular module called `BlogPost` that takes `ui.router` as a d
 
 **Your answer:**
 ```js
+angular
+  .module("BlogPost", ['ui.router']);
 
 ```
 
@@ -28,7 +30,7 @@ scope.status = "Click";
 Which *one* of the following buttons would *not* be displayed?
 
 ```html
-[ ] A: <button data-ng-if="status">Click</button>
+[ x] A: <button data-ng-if="status">Click</button>
 [ ] B: <button data-ng-show="status">Click</button>
 [ ] C: <button data-ng-hide="status">Click</button>
 [ ] D: <button>{{status}}</button>
@@ -44,7 +46,7 @@ One button below has an `ng-click` attribute; the other has `data-ng-click` inst
 ```
 
 **Your answer:**
-
+With stack overflow as a reference I found there is no difference.
 > ...
 
 ## Question 4
@@ -52,7 +54,7 @@ One button below has an `ng-click` attribute; the other has `data-ng-click` inst
 Which of the following demonstrates the best usage of `ng-app`? **Explain your answer.**
 
 **Your answer:**
-
+A
 > ...
 
 ### A:
@@ -72,7 +74,7 @@ Which of the following demonstrates the best usage of `ng-app`? **Explain your a
 ### B:
 ```html
 <!DOCTYPE html>
-<html> 
+<html>
   <head data-ng-app="myapp">
     <title>My app</title>
   </head>
@@ -86,7 +88,7 @@ Which of the following demonstrates the best usage of `ng-app`? **Explain your a
 ### C:
 ```html
 <!DOCTYPE html>
-<html> 
+<html>
   <head>
     <title>My app</title>
   </head>
@@ -107,7 +109,7 @@ Which one of the following concepts does this best illustrate?
 [ ] A: Modularity
 [ ] B: MVC
 [ ] C: Two-way data-binding
-[ ] D: Separation of concerns
+[ x] D: Separation of concerns
 ```
 
 ## Question 6
@@ -115,7 +117,9 @@ Which one of the following concepts does this best illustrate?
 What is an IIFE, and why might you use it?
 
 **Your answer:**
+ Immediately Invoked Function Expression.
 
+ This removes variables from the global scope.
 > ...
 
 ## Question 7
@@ -159,7 +163,7 @@ Custom directives can be embedded in HTML four different ways. Demonstrate **two
 Of the three following options, which is the most "correct" way of organizing the files that make up an Angular app? Why is this option considered "better" than the other two?
 
 **Your answer:**
-
+I would choose A to be the most prefered because of seperation of concern.
 > ...
 
 
@@ -212,4 +216,3 @@ Of the three following options, which is the most "correct" way of organizing th
   songs/
     form.html
 ```
-
